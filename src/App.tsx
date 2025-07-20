@@ -7,11 +7,12 @@ import AboutPage from './pages/AboutPage';
 import OfficersPage from './pages/OfficersPage';
 import ProjectsPage from './pages/ProjectsPage';
 import NewsPage from './pages/NewsPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-primary-black flex flex-col">
+      <div className="min-h-screen bg-dark-bg flex flex-col">
         <Header />
         <main className="flex-grow">
           <Routes>
@@ -20,6 +21,7 @@ function App() {
             <Route path="/officers" element={<OfficersPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/news" element={<NewsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
         <Footer />
